@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    padding:0 150px;
+
+    .filter {
+        width: 30%;
+        min-width: 265px;
+        max-width: 350px;
+    }
+    .order {
+        width: 30%;
+        min-width: 265px;
+        max-width: 420px;
+    }
+    .list {
+        margin: 0 30px;
+    }
+}

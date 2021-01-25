@@ -1,0 +1,32 @@
+.foodPage {
+    display: flex;
+    justify-content: center;
+    &__addition {
+        &__header {
+            padding-left:150px;
+            display: flex;
+            
+            
+            &__filter {
+                padding: 15px;
+                border: 1px solid $line;
+                background-color: $blockColor;
+            }
+
+            &__order {
+                padding: 15px;
+                border: 1px solid $line;
+                background-color: $blockColor;
+            }
+
+            
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: $blockColor;
+    }
+}

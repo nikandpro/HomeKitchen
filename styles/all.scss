@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "./utils/vars.scss";
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+a {
+    text-decoration: none;
+    color:$grey;
+}
+body {
+  background-color: $white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: $grey;
+  margin: 0px;
+}
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/filter.scss";
+@import "./components/goods.scss";
+@import "./components/order.scss";
+@import "./components/category.scss";
+@import "./components/food.scss";
+@import "./components/container.scss";
+@import "./components/modal.scss";
+@import "./components/foodPage.scss"

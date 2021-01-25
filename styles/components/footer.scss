@@ -1,0 +1,54 @@
+.footer {
+  margin-top: 150px;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $blockColor;
+  }
+
+  &__location {
+    width: 50%;
+
+    h1 {
+      padding-left: 150px;
+      margin-bottom: 25px;
+    }
+    p {
+      padding-left: 150px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 150px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 150px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__network {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin: 13px;
+    }
+    
+
+
+  }
+}

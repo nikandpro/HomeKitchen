@@ -1,0 +1,47 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 150px;
+    border-bottom: 1px solid $line;
+
+    background: $white;
+  }
+
+  &__logo {
+    img {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 50%;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $grey;
+      margin-right: 43px;
+    }
+  }
+
+  &__register {
+    display: flex;
+
+    button:first-child {
+      margin-right: 22px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      border: none;
+      background-color: $white;
+      cursor: pointer;
+    }
+  }
+}

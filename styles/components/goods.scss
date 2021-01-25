@@ -1,0 +1,28 @@
+.list {
+
+  &__inner {
+    background-color: $blockColor;
+  }
+
+  &__search {
+    padding: 20px;
+    border-bottom: 1px solid $line;
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      background: $white;
+      box-shadow: 0px 10px 10px -12px rgba(0, 0, 0, 0.35);
+      border: none;
+      outline: none;
+      
+    }
+  }
+
+  &__foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin: 10px 8px;
+  }
+}

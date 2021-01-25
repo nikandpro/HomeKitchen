@@ -1,0 +1,76 @@
+.food {
+  margin: 10px 8px;
+  display: flex;
+
+  &__inner {
+    background-color: $white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 156px;
+  }
+
+  &__foto {
+    padding-bottom: 7px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    h4 {
+      margin: 0;
+      padding-bottom: 7px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: $lightgray;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+
+    h3 {
+      margin: 0px;
+    }
+
+    &__read {
+      display: flex;
+      align-items: center;
+
+        button {
+          cursor: pointer;
+          border: none;
+          box-shadow: 3px 3px 3px rgba(236, 0, 0, 0.1);
+          border-radius: 2px;
+          background-color: $but;
+          color: white;
+          font-size: 20px;
+          padding: 3px;
+          line-height: 14px;
+          font-size: 25px;
+        }
+
+      &__input {
+        margin: 10px;
+        color: $lightgray;
+        width: 38px;
+        background: $blockColor;
+        border-radius: 2px;
+        border: none;
+        padding: 3px 5px 3px 4px;
+        font-size: 12px;
+        outline: none;
+      }
+    }
+  }
+}
