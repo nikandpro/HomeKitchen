@@ -9,16 +9,16 @@ const FoodPage = () => {
 
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    let data = JSON.parse(localStorage.getItem("order"));
-    setData(data);
-  }, []);
+  // useEffect(() => {
+  //   let data = JSON.parse(localStorage.getItem("order"));
+  //   setData(data);
+  // }, []);
 
   //const [isFiltOr, setIsFiltOr] = useState(true);
 
-  useEffect(()   => {
-    getFood()
-  },[]);
+  // useEffect(()   => {
+  //   getFood()
+  // },[]);
 
   const getFood =  async () => {
     console.log("id",id)
