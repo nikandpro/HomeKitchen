@@ -1,32 +1,87 @@
 .foodPage {
-    display: flex;
-    justify-content: center;
-    &__addition {
-        &__header {
-            padding-left:150px;
-            display: flex;
-            
-            
-            &__filter {
-                padding: 15px;
-                border: 1px solid $line;
-                background-color: $blockColor;
-            }
+  display: flex;
+  justify-content: space-around;
 
-            &__order {
-                padding: 15px;
-                border: 1px solid $line;
-                background-color: $blockColor;
-            }
+  h4 {
+    margin: 0;
+  }
+  &__addition {
+    &__header {
+      display: flex;
 
-            
-        }
-    }
-
-    &__inner {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
+      &__filter {
+        padding: 15px;
+        border: 1px solid $line;
         background-color: $blockColor;
+      }
+
+      &__order {
+        padding: 15px;
+        border: 1px solid $line;
+        background-color: $blockColor;
+      }
     }
+  }
+
+  &__inner {
+    background-color: $blockColor;
+
+    &__foodInfo {
+      margin: 20px;
+      background-color: $white;
+      &__info {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+
+        &__header {
+          margin-bottom: 16px;
+        }
+
+        &__content {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 16px;
+          img {
+            height: 180px;
+            width: 360px;
+            margin-right: 25px;
+          }
+        }
+
+        &__footer {
+          display: flex;
+          justify-content: space-between;
+
+          &__price {
+            &__add {
+              input {
+                margin: 10px;
+                color: #a0a0a0;
+                width: 68px;
+                background: #f4f4f4;
+                border-radius: 2px;
+                border: none;
+                padding: 3px 5px 3px 4px;
+                font-size: 12px;
+                outline: none;
+              }
+              button {
+                cursor: pointer;
+                border: none;
+                box-shadow: 3px 3px 3px rgb(236 0 0 / 10%);
+                border-radius: 2px;
+                background-color: #ec0000;
+                color: white;
+                font-size: 20px;
+                padding: 3px;
+                line-height: 14px;
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

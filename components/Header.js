@@ -38,7 +38,7 @@ const Header = ({}) => {
           </Link>
         </div>
         <div className="header__register">
-          <button onClick={() => setSingIn(true)} >Войти</button>
+          <button onClick={() => setSingIn(true)} >Вход</button>
           <button onClick={() => setSingUp(true)} >Регистрация</button>
         </div>
       </div>

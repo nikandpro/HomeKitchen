@@ -22,7 +22,6 @@ const Category = ({ tag , sendSubTag }) => {
           {tag.subTags.map((subTag, index) => {
             return (
               <div key={index} className="category__item">
-                {/* <img src="/tab.svg" alt="" /> */}
                 <input type="checkbox" value={subTag.id}
                 onChange={() => sendSubTag(subTag.id)} />
                 <label>{subTag.name}</label>

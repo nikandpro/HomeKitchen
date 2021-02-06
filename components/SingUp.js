@@ -31,6 +31,7 @@ const SingUp = ({ close }) => {
         console.log(error);
       });
     console.log("CHECK USER");
+    localStorage.setItem("user", JSON.stringify(user))
     console.log(user);
   };
 
@@ -58,6 +59,7 @@ const SingUp = ({ close }) => {
               <label>Почта</label>
               <input
                 type="email"
+                placeholder="Ваша Почта"
                 value={user.mail}
                 // name="username"
                 // onChange={(e) => updateField(e)}
@@ -68,6 +70,7 @@ const SingUp = ({ close }) => {
               <label>Пароль</label>
               <input
                 type={eye.type}
+                placeholder="Пароль"
                 value={user.password}
                 onChange={(e) => handleForm("password", e.target.value)}
               />

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Food from "../components/Food";
 
 const Goods = ({ food, sendAddFood }) => {
-
-  const [addFood, setAddFood] = useState();
   return (
     <div className="list">
       <div className="list__inner">

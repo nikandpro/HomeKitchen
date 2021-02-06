@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { fetchFood, fetchTag } from "../api/food";
 import Filter from "../components/Filter";
 import Goods from "../components/Goods";
 import Order from "../components/Order";
 
-// const [example, setExample] = useState(null);
 const Main = ({ food, tag }) => {
+
+  useEffect(() => {
+    localStorage.setItem("tags", JSON.stringify(tag))
+  })
   
   const [subFoods, setSubFoods] = useState([]);
-  const [addFoods, setAddFoods] = useState([]);
+  const [addFoods, setAddFoods] = useState({});
+
   const toggleFood = (addFood) => {
-    setAddFoods([...addFoods, addFood])
-    console.log("123",addFoods)
+    setAddFoods(addFood);
   }
 
   return(

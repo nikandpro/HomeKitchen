@@ -1,16 +1,19 @@
-import Category from "../components/Category";
-import React, { useEffect, useState } from "react";
+import Category from "./Category";
+import React, { useState, useEffect } from "react";
 import { fetchFoodForSubTag } from "../api/food";
 
 const Filter = ({ tags, sendSubFood }) => {
   const [allSubtag, setAllSubtag] = useState([]);
 
+  useEffect(() => {
+    // localStorage.setItem("tags", tags)
+  })
+
   const requestForSubtag = async (allSubtag) => {
     console.log(allSubtag)
     const subFood = await fetchFoodForSubTag(allSubtag);
-    console.log(subFood)
-    sendSubFood(subFood);
- 
+    console.log(subFood);
+    sendSubFood(subFood)
   };
 
   const toggleSubTag = (subtag) => {
@@ -25,6 +28,8 @@ const Filter = ({ tags, sendSubFood }) => {
       setAllSubtag([...allSubtag, subtag]);
     }
   };
+
+  
 
   return (
     <div className="filter">

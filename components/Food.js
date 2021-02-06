@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const Food = ({ data, sendAddData }) => {
+  //const [quantity, setQuantity] = useState();
   return (
     <div className="food">
       <div className="food__inner">
@@ -29,6 +30,7 @@ const Food = ({ data, sendAddData }) => {
                 className="food__row__read__input"
                 type="text"
                 placeholder="0 шт."
+                
               />
 
               <button className="food__row__read__addBut" onClick={() => sendAddData(data)}>+</button>
