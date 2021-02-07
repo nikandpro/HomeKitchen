@@ -11,6 +11,5 @@
    
    + Запросы на Backend реализованы с помощью библиотеке Axios
   
-   + Взаимодействованы фреймворки React и Next.js
+   + Взаимодействованы фреймворки **React** и **Next.js**
    
-   ![Рисунок12](https://www.freecodecamp.org/news/content/images/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png)
